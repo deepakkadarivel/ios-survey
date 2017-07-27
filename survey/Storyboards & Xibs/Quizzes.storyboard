@@ -20,12 +20,48 @@
                     <view key="view" contentMode="scaleToFill" id="ZLf-XK-HEB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uf5-hq-Nih">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oW6-Hp-etX">
+                                        <rect key="frame" x="20" y="32" width="48" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="FUX-tT-uph"/>
+                                            <constraint firstAttribute="height" constant="48" id="dY3-oY-ct9"/>
+                                        </constraints>
+                                        <state key="normal" image="cancel"/>
+                                        <connections>
+                                            <action selector="dismissController:" destination="xon-kQ-nh7" eventType="touchUpInside" id="arb-Hg-UQ8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="oW6-Hp-etX" firstAttribute="top" secondItem="Uf5-hq-Nih" secondAttribute="top" constant="32" id="BNO-zx-tfs"/>
+                                    <constraint firstItem="oW6-Hp-etX" firstAttribute="leading" secondItem="Uf5-hq-Nih" secondAttribute="leading" constant="20" id="qCH-jE-zpo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uf5-hq-Nih" firstAttribute="leading" secondItem="ZLf-XK-HEB" secondAttribute="leading" id="88I-XJ-gpi"/>
+                            <constraint firstAttribute="trailing" secondItem="Uf5-hq-Nih" secondAttribute="trailing" id="ZkA-oj-ARA"/>
+                            <constraint firstItem="Uf5-hq-Nih" firstAttribute="top" secondItem="ZLf-XK-HEB" secondAttribute="top" id="pIk-2e-Lvm"/>
+                            <constraint firstItem="qNp-kv-64T" firstAttribute="top" secondItem="Uf5-hq-Nih" secondAttribute="bottom" id="pd2-Kw-kHr"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bgView" destination="Uf5-hq-Nih" id="47c-Zm-eTn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0m5-ga-RaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="79" y="344"/>
+            <point key="canvasLocation" x="77.599999999999994" y="343.17841079460271"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cancel" width="48" height="48"/>
+    </resources>
 </document>

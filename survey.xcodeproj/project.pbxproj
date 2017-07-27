@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		257C500EAE1A9956822196F8 /* topic.json in Resources */ = {isa = PBXBuildFile; fileRef = 257C517726E7185CE934E5CD /* topic.json */; };
 		257C50300D4E6C29761C2545 /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C552E4DB86ABB20EFABB5 /* NavigationUtil.swift */; };
+		257C510919F44020142B9E25 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C585DB011F9442E566C62 /* UIViewExtension.swift */; };
 		257C5238EC0A6966E1B73155 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C519462944E23C9A5D4D6 /* Quiz.swift */; };
 		257C5431B72E7829F916393C /* SubTopicsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C5347E5F9C710368842C1 /* SubTopicsCollectionViewCell.swift */; };
 		257C55F7599C4C565F4C5D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257C5BE1A4D7EBF4A7410141 /* Main.storyboard */; };
@@ -16,8 +17,8 @@
 		257C57753BAC779806F4FB70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C52601A4BC04B1CD2BEA9 /* ViewController.swift */; };
 		257C57A1262A69654536DDEF /* option.json in Resources */ = {isa = PBXBuildFile; fileRef = 257C541F1947981E0C44A28E /* option.json */; };
 		257C57C28176C4FEFA088399 /* subtopic.json in Resources */ = {isa = PBXBuildFile; fileRef = 257C52DB83AC04FA1E7C5C74 /* subtopic.json */; };
+		257C585700E7C12169D906C4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C5F3B37FE2AD99B619619 /* Colors.swift */; };
 		257C586D3D2AAEC33C39DC2C /* mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C5D2775177783D2FADDDF /* mock.swift */; };
-		257C58D75E147FA61DCA093A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 257C5EAAE0E5B2EC368C81A1 /* Assets.xcassets */; };
 		257C59533D6E3E40FBD859DC /* TopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C5EBAB20440CD077C0A6C /* TopicsViewController.swift */; };
 		257C5979D81929C06B3EC443 /* SubTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C5BE97AE5FB0E912F8370 /* SubTopic.swift */; };
 		257C5AD794612D5B3AAE0998 /* TopicsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C5CAF8C2E60864A8168C4 /* TopicsCollectionViewCell.swift */; };
@@ -30,6 +31,7 @@
 		257C5D73C8D12F05772D4A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C5FA66E40E1515B89F62B /* AppDelegate.swift */; };
 		257C5E55E91C729BA173DDB7 /* SubTopics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257C56F99923D0F61A64C700 /* SubTopics.storyboard */; };
 		2A7A7A111F29B0620021B317 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A7A101F29B0620021B317 /* Option.swift */; };
+		2A7A7A311F2A616E0021B317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7A7A301F2A616E0021B317 /* Assets.xcassets */; };
 		62C0B2B7ADE9FA17801F356F /* Pods_survey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D428B120F9FAAE778BA2F035 /* Pods_survey.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,19 +59,21 @@
 		257C56F99923D0F61A64C700 /* SubTopics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubTopics.storyboard; sourceTree = "<group>"; };
 		257C58051996F11E053F0DF8 /* Topic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		257C583F15BC275A1D1B5C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = survey/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		257C585DB011F9442E566C62 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		257C5A0288672DF79CC87933 /* quiz.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quiz.json; sourceTree = "<group>"; };
 		257C5BE97AE5FB0E912F8370 /* SubTopic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubTopic.swift; sourceTree = "<group>"; };
 		257C5CAF8C2E60864A8168C4 /* TopicsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicsCollectionViewCell.swift; sourceTree = "<group>"; };
 		257C5D2775177783D2FADDDF /* mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mock.swift; sourceTree = "<group>"; };
 		257C5E5189A2D43C83CD1D58 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		257C5E5B0A7A478D75DD7603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = survey/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		257C5EAAE0E5B2EC368C81A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		257C5EBAB20440CD077C0A6C /* TopicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicsViewController.swift; sourceTree = "<group>"; };
 		257C5EFE267F404193D08258 /* QuizzesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizzesViewController.swift; sourceTree = "<group>"; };
+		257C5F3B37FE2AD99B619619 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		257C5FA66E40E1515B89F62B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A5392DA1F28EDD50050A7FF /* survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = survey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7A7A101F29B0620021B317 /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		2A7A7A181F29B9560021B317 /* surveyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = surveyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A7A7A301F2A616E0021B317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D90A2DB223488124AE0D29E /* Pods-survey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-survey.release.xcconfig"; path = "Pods/Target Support Files/Pods-survey/Pods-survey.release.xcconfig"; sourceTree = "<group>"; };
 		89BEB8D53DE222652FAEC7FD /* Pods-survey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-survey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-survey/Pods-survey.debug.xcconfig"; sourceTree = "<group>"; };
 		D428B120F9FAAE778BA2F035 /* Pods_survey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_survey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +98,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		257C51088F70DB233B439271 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				257C5243A3ABC79F1B5D706A /* Views */,
+				257C5A26F4023B6A43B6F81C /* Colors */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		257C5243A3ABC79F1B5D706A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				257C585DB011F9442E566C62 /* UIViewExtension.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		257C53FBC9A91053CFAF4EB3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,20 +149,20 @@
 			path = "Storyboards & Xibs";
 			sourceTree = "<group>";
 		};
+		257C5A26F4023B6A43B6F81C /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				257C5F3B37FE2AD99B619619 /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		257C5A5999DF72CADA008C28 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				257C5FA66E40E1515B89F62B /* AppDelegate.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		257C5C0C8645FCD4F0B18083 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				257C5EAAE0E5B2EC368C81A1 /* Assets.xcassets */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		257C5F59A35117E4F79DDF9E /* Util */ = {
@@ -164,6 +185,7 @@
 		2A5392D11F28EDD50050A7FF = {
 			isa = PBXGroup;
 			children = (
+				2A7A7A301F2A616E0021B317 /* Assets.xcassets */,
 				2A5392DC1F28EDD50050A7FF /* survey */,
 				2A5392DB1F28EDD50050A7FF /* Products */,
 				8CF2FC663BF70B99E2EB78A1 /* Pods */,
@@ -187,11 +209,11 @@
 				257C53FBC9A91053CFAF4EB3 /* Models */,
 				257C55A0C35257E45A086BA2 /* Controllers */,
 				257C57F261B7449BE4F03F35 /* Storyboards & Xibs */,
-				257C5C0C8645FCD4F0B18083 /* Assets */,
 				257C5A5999DF72CADA008C28 /* App */,
 				257C5F59A35117E4F79DDF9E /* Util */,
 				257C5FF6016780E7CE2E26C3 /* Views */,
 				257C5E5189A2D43C83CD1D58 /* Info.plist */,
+				257C51088F70DB233B439271 /* Extras */,
 			);
 			path = survey;
 			sourceTree = "<group>";
@@ -317,9 +339,9 @@
 				257C57C28176C4FEFA088399 /* subtopic.json in Resources */,
 				257C5C5CAA1829542F8A3AE3 /* quiz.json in Resources */,
 				257C57A1262A69654536DDEF /* option.json in Resources */,
+				2A7A7A311F2A616E0021B317 /* Assets.xcassets in Resources */,
 				257C5C409E5F0A9D1F734C1C /* LaunchScreen.storyboard in Resources */,
 				257C55F7599C4C565F4C5D24 /* Main.storyboard in Resources */,
-				257C58D75E147FA61DCA093A /* Assets.xcassets in Resources */,
 				257C5D0A7E068144F449F76B /* Topics.storyboard in Resources */,
 				257C5E55E91C729BA173DDB7 /* SubTopics.storyboard in Resources */,
 				257C5646E648C03F96612B81 /* Quizzes.storyboard in Resources */,
@@ -401,6 +423,8 @@
 				257C5D704C13A697598810F6 /* SubTopicsViewController.swift in Sources */,
 				257C5431B72E7829F916393C /* SubTopicsCollectionViewCell.swift in Sources */,
 				257C5AFE29716792F2D25AF6 /* QuizzesViewController.swift in Sources */,
+				257C510919F44020142B9E25 /* UIViewExtension.swift in Sources */,
+				257C585700E7C12169D906C4 /* Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +563,7 @@
 			baseConfigurationReference = 89BEB8D53DE222652FAEC7FD /* Pods-survey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = Y4CY2JJR3S;
 				INFOPLIST_FILE = survey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -553,6 +578,7 @@
 			baseConfigurationReference = 7D90A2DB223488124AE0D29E /* Pods-survey.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = Y4CY2JJR3S;
 				INFOPLIST_FILE = survey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
