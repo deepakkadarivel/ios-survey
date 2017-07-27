@@ -32,6 +32,9 @@
 		257C5E55E91C729BA173DDB7 /* SubTopics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257C56F99923D0F61A64C700 /* SubTopics.storyboard */; };
 		2A7A7A111F29B0620021B317 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7A7A101F29B0620021B317 /* Option.swift */; };
 		2A7A7A311F2A616E0021B317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A7A7A301F2A616E0021B317 /* Assets.xcassets */; };
+		2A7A7A371F2A6DE90021B317 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A7A7A341F2A6DE90021B317 /* Comfortaa-Bold.ttf */; };
+		2A7A7A381F2A6DE90021B317 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A7A7A351F2A6DE90021B317 /* Comfortaa-Light.ttf */; };
+		2A7A7A391F2A6DE90021B317 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A7A7A361F2A6DE90021B317 /* Comfortaa-Regular.ttf */; };
 		62C0B2B7ADE9FA17801F356F /* Pods_survey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D428B120F9FAAE778BA2F035 /* Pods_survey.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +77,9 @@
 		2A7A7A101F29B0620021B317 /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		2A7A7A181F29B9560021B317 /* surveyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = surveyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A7A7A301F2A616E0021B317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A7A7A341F2A6DE90021B317 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		2A7A7A351F2A6DE90021B317 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		2A7A7A361F2A6DE90021B317 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		7D90A2DB223488124AE0D29E /* Pods-survey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-survey.release.xcconfig"; path = "Pods/Target Support Files/Pods-survey/Pods-survey.release.xcconfig"; sourceTree = "<group>"; };
 		89BEB8D53DE222652FAEC7FD /* Pods-survey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-survey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-survey/Pods-survey.debug.xcconfig"; sourceTree = "<group>"; };
 		D428B120F9FAAE778BA2F035 /* Pods_survey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_survey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +211,7 @@
 		2A5392DC1F28EDD50050A7FF /* survey */ = {
 			isa = PBXGroup;
 			children = (
+				2A7A7A321F2A6DC70021B317 /* Assets */,
 				2A7A7A271F29BC4F0021B317 /* mockdata */,
 				257C53FBC9A91053CFAF4EB3 /* Models */,
 				257C55A0C35257E45A086BA2 /* Controllers */,
@@ -228,6 +235,24 @@
 				257C5D2775177783D2FADDDF /* mock.swift */,
 			);
 			name = mockdata;
+			sourceTree = "<group>";
+		};
+		2A7A7A321F2A6DC70021B317 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2A7A7A331F2A6DD30021B317 /* Fonts */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		2A7A7A331F2A6DD30021B317 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2A7A7A341F2A6DE90021B317 /* Comfortaa-Bold.ttf */,
+				2A7A7A351F2A6DE90021B317 /* Comfortaa-Light.ttf */,
+				2A7A7A361F2A6DE90021B317 /* Comfortaa-Regular.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		8CF2FC663BF70B99E2EB78A1 /* Pods */ = {
@@ -339,12 +364,15 @@
 				257C57C28176C4FEFA088399 /* subtopic.json in Resources */,
 				257C5C5CAA1829542F8A3AE3 /* quiz.json in Resources */,
 				257C57A1262A69654536DDEF /* option.json in Resources */,
+				2A7A7A381F2A6DE90021B317 /* Comfortaa-Light.ttf in Resources */,
 				2A7A7A311F2A616E0021B317 /* Assets.xcassets in Resources */,
+				2A7A7A371F2A6DE90021B317 /* Comfortaa-Bold.ttf in Resources */,
 				257C5C409E5F0A9D1F734C1C /* LaunchScreen.storyboard in Resources */,
 				257C55F7599C4C565F4C5D24 /* Main.storyboard in Resources */,
 				257C5D0A7E068144F449F76B /* Topics.storyboard in Resources */,
 				257C5E55E91C729BA173DDB7 /* SubTopics.storyboard in Resources */,
 				257C5646E648C03F96612B81 /* Quizzes.storyboard in Resources */,
+				2A7A7A391F2A6DE90021B317 /* Comfortaa-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
