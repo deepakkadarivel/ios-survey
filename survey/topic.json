@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Mathematics",
+    "subtopics": [
+      {
+        "id": 11,
+        "name": "Algebra",
+        "quizzes": [
+          {
+            "id": 21,
+            "answer": 2,
+            "options": [
+              {
+                "id": 1,
+                "value": "222"
+              },
+              {
+                "id": 1,
+                "value": "333"
+              },
+              {
+                "id": 1,
+                "value": "444"
+              },
+              {
+                "id": 1,
+                "value": "555"
+              }
+            ],
+            "question": "6 × 111 – 3 × 111 are equal to: "
+          },
+          {
+            "id": 22,
+            "answer": 4,
+            "options": [
+              {
+                "id": 1,
+                "value": "R500"
+              },
+              {
+                "id": 1,
+                "value": "R400"
+              },
+              {
+                "id": 1,
+                "value": "R300"
+              },
+              {
+                "id": 1,
+                "value": "R200"
+              }
+            ],
+            "question": "Audrey has R5 000 in her savings account that earns 3, 75% annual interest. What is a reasonable estimate of interest she will earn in 1 year? "
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Geometry",
+        "quizzes": [
+          {
+            "id": 21,
+            "answer": 2,
+            "options": [
+              {
+                "id": 1,
+                "value": "(−5, 3) and 16"
+              },
+              {
+                "id": 1,
+                "value": "(5, −3) and 16"
+              },
+              {
+                "id": 1,
+                "value": "(−5, 3) and 4"
+              },
+              {
+                "id": 1,
+                "value": "(5, −3) and 4"
+              }
+            ],
+            "question": "What are the center and the radius of the circle whose equation is (x − 5)2 + (y + 3)2 = 16?"
+          },
+          {
+            "id": 22,
+            "answer": 4,
+            "options": [
+              {
+                "id": 1,
+                "value": "72"
+              },
+              {
+                "id": 1,
+                "value": "360"
+              },
+              {
+                "id": 1,
+                "value": "540"
+              },
+              {
+                "id": 1,
+                "value": "720"
+              }
+            ],
+            "question": "The number of degrees in the sum of the interior angles of a pentagon is"
+          }
+        ]
+      }
+    ]
+  }
+]

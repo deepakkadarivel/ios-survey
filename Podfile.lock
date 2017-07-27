@@ -1,0 +1,18 @@
+PODS:
+  - Gloss (1.2.4)
+  - ObjectMapper (2.2.8)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Gloss (~> 1.2)
+  - ObjectMapper (~> 2.2)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Gloss: 4e036074610fdb993abcb958ebcd7332588e2333
+  ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: c2b27f880e6b38deab28089ad8064e66f3dfc174
+
+COCOAPODS: 1.2.1
