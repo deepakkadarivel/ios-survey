@@ -63,6 +63,9 @@
                                                         <state key="normal" title="Prev">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="renderPrevQuiz:" destination="xon-kQ-nh7" eventType="touchUpInside" id="SJC-ou-0j5"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhw-G1-GPs">
                                                         <rect key="frame" x="168" y="0.0" width="167" height="36"/>
@@ -71,6 +74,9 @@
                                                         <state key="normal" title="Next">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="renderNextQuiz:" destination="xon-kQ-nh7" eventType="touchUpInside" id="kC9-YC-CVz"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -118,6 +124,8 @@
                     <connections>
                         <outlet property="bgView" destination="Uf5-hq-Nih" id="47c-Zm-eTn"/>
                         <outlet property="iteratorButtonView" destination="s6m-Fj-Dq6" id="UtH-dG-nhh"/>
+                        <outlet property="nextQuizButton" destination="Lhw-G1-GPs" id="O85-HW-M7Q"/>
+                        <outlet property="prevQuizButton" destination="NwU-ei-s5i" id="9NZ-Hq-j90"/>
                         <outlet property="questionLabel" destination="79B-LQ-53D" id="wIH-FA-R4N"/>
                         <outlet property="quizIteratorLabel" destination="IoW-ge-pNq" id="Dp4-aH-ZfF"/>
                     </connections>
