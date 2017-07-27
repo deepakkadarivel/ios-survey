@@ -28,8 +28,15 @@ class NavigationUtil {
         let storyboard: UIStoryboard = UIStoryboard(name: "SubTopics", bundle: nil)
         let destination = storyboard.instantiateViewController(withIdentifier: "SubTopicsVC") as! SubTopicsViewController
         destination.mockSubTopics = subtopics
-        let navigationController = UINavigationController(rootViewController: destination)
-        vc.present(navigationController, animated: true, completion: nil)
+        vc.navigationController!.pushViewController(destination, animated: true)
+    }
+
+    static func gotoQuizzesScreen(vc: UIViewController, quizzes: [Quiz]) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Quizzes", bundle: nil)
+        let destination = storyboard.instantiateViewController(withIdentifier: "QuizzesVC") as! QuizzesViewController
+        destination.mockQuizzes = quizzes
+//        let navigationController = UINavigationController(rootViewController: destination)
+        vc.present(destination, animated: true, completion: nil)
     }
 
 //    static func gotoDestinationDetail(_ vc: UIViewController, destinationValue: Destination) {

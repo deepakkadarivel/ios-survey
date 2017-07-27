@@ -26,7 +26,7 @@ extension SubTopicsViewController: UICollectionViewDelegate, UICollectionViewDat
         return cell
     }
 
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        NavigationUtil.gotoSubTopicsScreen(self, destinationValue: mockTopics[indexPath.row].subtopics)
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        NavigationUtil.gotoQuizzesScreen(vc: self, quizzes: mockSubTopics[indexPath.row].quizzes!)
+    }
 }
