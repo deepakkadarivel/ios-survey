@@ -1,7 +1,125 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pej-5F-9it">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Topics View Controller-->
+        <scene sceneID="dVR-vF-PHh">
+            <objects>
+                <viewController storyboardIdentifier="TopicsVC" id="rY4-f5-wcF" customClass="TopicsViewController" customModule="survey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qyO-b7-Se6"/>
+                        <viewControllerLayoutGuide type="bottom" id="EGH-Re-67J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1kK-a0-wIn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dRI-2I-zwS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="b4f-K7-v6Q">
+                                    <size key="itemSize" width="375" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TopicsCell" id="0WR-ig-yXv" customClass="TopicsCollectionViewCell" customModule="survey" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLW-ng-jdb">
+                                                    <rect key="frame" x="5" y="5" width="365" height="90"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WQw-uU-AVI">
+                                                            <rect key="frame" x="20" y="20" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="bvO-7K-KbZ"/>
+                                                                <constraint firstAttribute="height" constant="50" id="oqU-ro-7CQ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LO3-fG-xeo">
+                                                            <rect key="frame" x="90" y="34" width="255" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="LO3-fG-xeo" secondAttribute="trailing" constant="20" id="DGH-t8-AOB"/>
+                                                        <constraint firstItem="LO3-fG-xeo" firstAttribute="centerY" secondItem="aLW-ng-jdb" secondAttribute="centerY" id="I9h-hl-pEx"/>
+                                                        <constraint firstItem="WQw-uU-AVI" firstAttribute="centerY" secondItem="aLW-ng-jdb" secondAttribute="centerY" id="bhR-7f-KCP"/>
+                                                        <constraint firstItem="WQw-uU-AVI" firstAttribute="leading" secondItem="aLW-ng-jdb" secondAttribute="leading" constant="20" id="efz-NR-3eE"/>
+                                                        <constraint firstItem="LO3-fG-xeo" firstAttribute="leading" secondItem="WQw-uU-AVI" secondAttribute="trailing" constant="20" id="nBf-rr-S1f"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="aLW-ng-jdb" firstAttribute="leading" secondItem="0WR-ig-yXv" secondAttribute="leading" constant="5" id="8Ph-X2-tze"/>
+                                            <constraint firstAttribute="trailing" secondItem="aLW-ng-jdb" secondAttribute="trailing" constant="5" id="DSC-mu-3WZ"/>
+                                            <constraint firstItem="aLW-ng-jdb" firstAttribute="top" secondItem="0WR-ig-yXv" secondAttribute="top" constant="5" id="Xkg-HO-CwW"/>
+                                            <constraint firstAttribute="bottom" secondItem="aLW-ng-jdb" secondAttribute="bottom" constant="5" id="gx2-9Y-txI"/>
+                                        </constraints>
+                                        <size key="customSize" width="375" height="100"/>
+                                        <connections>
+                                            <outlet property="topicImg" destination="WQw-uU-AVI" id="obE-2a-3pm"/>
+                                            <outlet property="topicLabel" destination="LO3-fG-xeo" id="71a-4P-sua"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="rY4-f5-wcF" id="7yO-7A-Nwb"/>
+                                    <outlet property="delegate" destination="rY4-f5-wcF" id="4Ke-4Q-ilu"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dRI-2I-zwS" secondAttribute="trailing" id="1Cg-CV-4ar"/>
+                            <constraint firstItem="dRI-2I-zwS" firstAttribute="leading" secondItem="1kK-a0-wIn" secondAttribute="leading" id="8s1-tu-m3C"/>
+                            <constraint firstItem="EGH-Re-67J" firstAttribute="top" secondItem="dRI-2I-zwS" secondAttribute="bottom" id="BIn-KV-vNC"/>
+                            <constraint firstItem="dRI-2I-zwS" firstAttribute="top" secondItem="1kK-a0-wIn" secondAttribute="top" id="b2F-No-v8R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DRI-Sk-Nfe"/>
+                    <connections>
+                        <outlet property="topicsCollectionView" destination="dRI-2I-zwS" id="S2B-0J-lzE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jJS-LE-c5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="268" y="-237.03148425787109"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1bA-Aq-DUB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pej-5F-9it" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cEA-GB-iWM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rY4-f5-wcF" kind="relationship" relationship="rootViewController" id="exT-NC-xSW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JpZ-Ax-oBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-671.20000000000005" y="-237.03148425787109"/>
+        </scene>
+    </scenes>
 </document>
