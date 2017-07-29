@@ -24,8 +24,13 @@ class OptionsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func set(option: Option) {
+    func set(option: Option, selected: Bool) {
         optionLabel.text = option.value
+        if selected {
+            self.selectImage.image = UIImage(named: "check")
+        } else {
+                self.selectImage.image = UIImage(named: "check-none")
+        }
     }
 
 }

@@ -6,6 +6,7 @@ class QuizzesViewController: UIViewController {
     var quizzesCount: Int = 0
     var iteratorCount: Int = 0
     var mockOptions: Array<Option> = []
+    var selecttedIndex: Int = -1
 
     @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var quizIteratorLabel: UILabel!
@@ -36,6 +37,7 @@ class QuizzesViewController: UIViewController {
         } else {
             self.iteratorCount += 1
             self.setQuizItem(quiz: mockQuizzes[self.iteratorCount], options: mockQuizzes[self.iteratorCount].options!)
+            self.selecttedIndex = -1
         }
     }
 
@@ -43,10 +45,8 @@ class QuizzesViewController: UIViewController {
         if iteratorCount != 0 {
             self.iteratorCount -= 1
             self.setQuizItem(quiz: mockQuizzes[self.iteratorCount], options: mockQuizzes[self.iteratorCount].options!)
-        } else {
-
+            self.selecttedIndex = -1
         }
-
     }
 
     func renderButtonStates() {
@@ -100,9 +100,17 @@ extension QuizzesViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "OptionCell", for: indexPath) as! OptionsTableViewCell
-        cell.set(option: self.mockOptions[indexPath.row])
+        if selecttedIndex == indexPath.row {
+            cell.set(option: self.mockOptions[indexPath.row], selected: true)
+        } else {
+            cell.set(option: self.mockOptions[indexPath.row], selected: false)
+        }
         return cell
-
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selecttedIndex = indexPath.row
+        self.optionsTableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
