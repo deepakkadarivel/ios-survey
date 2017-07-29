@@ -13,6 +13,12 @@ class TopicsViewController: UIViewController {
 
         mockTopics = getTopics()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.tintColor = UIColor(red: 0.25, green: 0.36, blue: 0.88, alpha: 1)
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "comfortaa-regular", size: 15)!, NSForegroundColorAttributeName: UIColor(red: 0.25, green: 0.36, blue: 0.88, alpha: 1)]
+        self.navigationController?.navigationBar.topItem!.title = "Survey"
+    }
 
 }
 
@@ -32,7 +38,9 @@ extension TopicsViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        NavigationUtil.gotoSubTopicsScreen(vc: self, subtopics: mockTopics[indexPath.row].subtopics!)
+        if (self.mockTopics[indexPath.row].subtopics?.count)! > 0 {
+            NavigationUtil.gotoSubTopicsScreen(vc: self, subtopics: mockTopics[indexPath.row].subtopics!, viewTitle: mockTopics[indexPath.row].name!)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

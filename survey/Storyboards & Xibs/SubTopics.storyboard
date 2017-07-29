@@ -21,9 +21,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XpU-FU-JIO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XpU-FU-JIO">
+                                <rect key="frame" x="0.0" y="8" width="375" height="659"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NoN-M4-ce3">
                                     <size key="itemSize" width="375" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -38,9 +38,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="32g-r8-TMj">
-                                                    <rect key="frame" x="5" y="5" width="365" height="90"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="32g-r8-TMj">
+                                                    <rect key="frame" x="8" y="5" width="359" height="90"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iva-qd-fzB">
                                                             <rect key="frame" x="80" y="34" width="265" height="21"/>
@@ -59,10 +58,17 @@
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="32g-r8-TMj" firstAttribute="top" secondItem="ioV-c3-KCM" secondAttribute="top" constant="5" id="ZMV-rP-C1o"/>
+                                            <constraint firstItem="32g-r8-TMj" firstAttribute="leading" secondItem="ioV-c3-KCM" secondAttribute="leading" constant="8" id="cE6-LC-MdZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="32g-r8-TMj" secondAttribute="bottom" constant="5" id="dmO-qo-Uaz"/>
+                                            <constraint firstAttribute="trailing" secondItem="32g-r8-TMj" secondAttribute="trailing" constant="8" id="qKx-HJ-t6u"/>
+                                        </constraints>
                                         <size key="customSize" width="375" height="100"/>
                                         <connections>
                                             <outlet property="subTopicImg" destination="e2Q-V7-KKs" id="xtQ-Pa-59S"/>
                                             <outlet property="subTopicLabel" destination="Iva-qd-fzB" id="tLj-Rd-IOe"/>
+                                            <outlet property="subTopicView" destination="32g-r8-TMj" id="D2v-cm-Zg6"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -74,7 +80,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XpU-FU-JIO" firstAttribute="top" secondItem="5uD-VB-KlQ" secondAttribute="top" id="1sS-Xc-8vC"/>
+                            <constraint firstItem="XpU-FU-JIO" firstAttribute="top" secondItem="5uD-VB-KlQ" secondAttribute="top" constant="8" id="1sS-Xc-8vC"/>
                             <constraint firstItem="XpU-FU-JIO" firstAttribute="leading" secondItem="5uD-VB-KlQ" secondAttribute="leading" id="Nt0-zW-Odd"/>
                             <constraint firstAttribute="trailing" secondItem="XpU-FU-JIO" secondAttribute="trailing" id="cbd-IS-F1H"/>
                             <constraint firstItem="HCf-fV-Drg" firstAttribute="top" secondItem="XpU-FU-JIO" secondAttribute="bottom" id="fIs-uM-8f5"/>

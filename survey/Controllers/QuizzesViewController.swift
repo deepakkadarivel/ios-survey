@@ -75,7 +75,7 @@ class QuizzesViewController: UIViewController {
     func initialQuizViewSetup() {
         self.bgView.addBackgroundGradientLayer(self.bgView, subView: self.bgView, colorTop: Colors.Purple, colorBottom: Colors.Blue)
         _ = self.iteratorButtonView.applyCornerRadius(self.iteratorButtonView, cornerRadius: self.iteratorButtonView.frame.size.height / 20, borderColor: Colors.Transparent)
-        _ = self.optionsView.applyCornerRadius(self.optionsView, cornerRadius: self.iteratorButtonView.frame.size.height / 20, borderColor: Colors.Transparent)
+        _ = self.optionsView.applyCornerRadius(self.optionsView, cornerRadius: self.optionsView.frame.size.height / 60, borderColor: Colors.Transparent)
 
         self.quizzesCount = self.mockQuizzes.count
         self.setQuizItem(quiz: mockQuizzes[self.iteratorCount], options: mockQuizzes[self.iteratorCount].options!)

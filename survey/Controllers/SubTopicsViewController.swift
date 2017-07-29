@@ -4,6 +4,7 @@ import UIKit
 class SubTopicsViewController: UIViewController {
 
 var mockSubTopics: Array<SubTopic> = []
+    var viewTitle: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,8 @@ extension SubTopicsViewController: UICollectionViewDelegate, UICollectionViewDat
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        NavigationUtil.gotoQuizzesScreen(vc: self, quizzes: mockSubTopics[indexPath.row].quizzes!)
+        if (self.mockSubTopics[indexPath.row].quizzes?.count)! > 0 {
+            NavigationUtil.gotoQuizzesScreen(vc: self, quizzes: mockSubTopics[indexPath.row].quizzes!)
+        }
     }
 }

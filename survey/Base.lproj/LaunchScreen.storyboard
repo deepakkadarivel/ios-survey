@@ -1,9 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Light.ttf">
+            <string>Comfortaa-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -16,7 +25,28 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="survey" translatesAutoresizingMaskIntoConstraints="NO" id="xdq-XS-Ix5">
+                                <rect key="frame" x="127.5" y="273.5" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="dpo-Ez-LVR"/>
+                                    <constraint firstAttribute="width" constant="120" id="gMj-dx-MAA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SURVEY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBD-1M-zyd">
+                                <rect key="frame" x="139" y="443.5" width="98" height="27"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Light" family="Comfortaa" pointSize="24"/>
+                                <color key="textColor" red="0.25098039220000001" green="0.36078431370000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xdq-XS-Ix5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Lqn-6p-ole"/>
+                            <constraint firstItem="xdq-XS-Ix5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="b2P-Xs-Keb"/>
+                            <constraint firstItem="bBD-1M-zyd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bhg-R5-gbs"/>
+                            <constraint firstItem="bBD-1M-zyd" firstAttribute="top" secondItem="xdq-XS-Ix5" secondAttribute="bottom" constant="50" id="wCs-lh-qRW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +54,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="survey" width="360" height="360"/>
+    </resources>
 </document>

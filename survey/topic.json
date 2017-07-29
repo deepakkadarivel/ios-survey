@@ -1,11 +1,13 @@
 [
   {
     "id": 1,
-    "name": "Mathematics",
+    "name": "Computer Science",
+    "image": "computer",
     "subtopics": [
       {
         "id": 11,
-        "name": "Algebra",
+        "name": "Java Programming",
+        "image": "java",
         "quizzes": [
           {
             "id": 21,
@@ -13,22 +15,22 @@
             "options": [
               {
                 "id": 1,
-                "value": "222"
+                "value": "int [] myList = {'1', '2', '3'};"
               },
               {
                 "id": 1,
-                "value": "333"
+                "value": "int [] myList = (5, 8, 2);"
               },
               {
                 "id": 1,
-                "value": "444"
+                "value": "int myList [] [] = {4,9,7,0};"
               },
               {
                 "id": 1,
-                "value": "555"
+                "value": "int myList [] = {4, 3, 7};"
               }
             ],
-            "question": "6 × 111 – 3 × 111 are equal to: "
+            "question": "Which will legally declare, construct, and initialize an array?"
           },
           {
             "id": 22,
@@ -36,28 +38,167 @@
             "options": [
               {
                 "id": 1,
-                "value": "R500"
+                "value": "public"
               },
               {
                 "id": 1,
-                "value": "R400"
+                "value": "private"
               },
               {
                 "id": 1,
-                "value": "R300"
+                "value": "protected"
               },
               {
                 "id": 1,
-                "value": "R200"
+                "value": "transient"
               }
             ],
-            "question": "Audrey has Rs 5000 in her savings account that earns 3.75% annual interest. What is a reasonable estimate of interest she will earn in 1 year? "
+            "question": "You want subclasses in any package to have access to members of a superclass. Which is the most restrictive access that accomplishes this objective?"
+          },
+          {
+            "id": 22,
+            "answer": 4,
+            "options": [
+              {
+                "id": 1,
+                "value": "TreeMap"
+              },
+              {
+                "id": 1,
+                "value": "HashMap"
+              },
+              {
+                "id": 1,
+                "value": "LinkedHashMap"
+              },
+              {
+                "id": 1,
+                "value": "The answer depends on the implementation of the existing instance."
+              }
+            ],
+            "question": "Suppose that you would like to create an instance of a new Map that has an iteration order that is the same as the iteration order of an existing instance of a Map. Which concrete implementation of the Map interface should be used for the new instance?"
+          },
+          {
+            "id": 22,
+            "answer": 4,
+            "options": [
+              {
+                "id": 1,
+                "value": "java.lang.String"
+              },
+              {
+                "id": 1,
+                "value": "java.lang.Double"
+              },
+              {
+                "id": 1,
+                "value": "java.lang.StringBuffer"
+              },
+              {
+                "id": 1,
+                "value": "java.lang.Character"
+              }
+            ],
+            "question": "Which class does not override the equals() and hashCode() methods, inheriting them directly from class Object?"
+          },
+          {
+            "id": 21,
+            "answer": 2,
+            "options": [
+              {
+                "id": 1,
+                "value": "int [] myList = {'1', '2', '3'};"
+              },
+              {
+                "id": 1,
+                "value": "int [] myList = (5, 8, 2);"
+              },
+              {
+                "id": 1,
+                "value": "int myList [] [] = {4,9,7,0};"
+              },
+              {
+                "id": 1,
+                "value": "int myList [] = {4, 3, 7};"
+              }
+            ],
+            "question": "Which will legally declare, construct, and initialize an array?"
+          },
+          {
+            "id": 22,
+            "answer": 4,
+            "options": [
+              {
+                "id": 1,
+                "value": "public"
+              },
+              {
+                "id": 1,
+                "value": "private"
+              },
+              {
+                "id": 1,
+                "value": "protected"
+              },
+              {
+                "id": 1,
+                "value": "transient"
+              }
+            ],
+            "question": "You want subclasses in any package to have access to members of a superclass. Which is the most restrictive access that accomplishes this objective?"
+          },
+          {
+            "id": 22,
+            "answer": 4,
+            "options": [
+              {
+                "id": 1,
+                "value": "TreeMap"
+              },
+              {
+                "id": 1,
+                "value": "HashMap"
+              },
+              {
+                "id": 1,
+                "value": "LinkedHashMap"
+              },
+              {
+                "id": 1,
+                "value": "The answer depends on the implementation of the existing instance."
+              }
+            ],
+            "question": "Suppose that you would like to create an instance of a new Map that has an iteration order that is the same as the iteration order of an existing instance of a Map. Which concrete implementation of the Map interface should be used for the new instance?"
+          },
+          {
+            "id": 22,
+            "answer": 4,
+            "options": [
+              {
+                "id": 1,
+                "value": "java.lang.String"
+              },
+              {
+                "id": 1,
+                "value": "java.lang.Double"
+              },
+              {
+                "id": 1,
+                "value": "java.lang.StringBuffer"
+              },
+              {
+                "id": 1,
+                "value": "java.lang.Character"
+              }
+            ],
+            "question": "Which class does not override the equals() and hashCode() methods, inheriting them directly from class Object?"
           }
         ]
       },
       {
         "id": 12,
-        "name": "Geometry",
+        "name": "Networking",
+        "image": "networking",
         "quizzes": [
           {
             "id": 21,
@@ -65,22 +206,22 @@
             "options": [
               {
                 "id": 1,
-                "value": "(−5, 3) and 16"
+                "value": "NAT"
               },
               {
                 "id": 1,
-                "value": "(5, −3) and 16"
+                "value": "Static"
               },
               {
                 "id": 1,
-                "value": "(−5, 3) and 4"
+                "value": "Dynamic"
               },
               {
                 "id": 1,
-                "value": "(5, −3) and 4"
+                "value": "PAT"
               }
             ],
-            "question": "What are the center and the radius of the circle whose equation is (x − 5)2 + (y + 3)2 = 16?"
+            "question": "What flavor of Network Address Translation can be used to have one IP address allow many users to connect to the global Internet?"
           },
           {
             "id": 22,
@@ -88,25 +229,342 @@
             "options": [
               {
                 "id": 1,
-                "value": "72"
+                "value": "100 kbps"
               },
               {
                 "id": 1,
-                "value": "360"
+                "value": "1 Mbps"
               },
               {
                 "id": 1,
-                "value": "540"
+                "value": "2 Mbps"
               },
               {
                 "id": 1,
-                "value": "720"
+                "value": "10 Mbps"
               }
             ],
-            "question": "The number of degrees in the sum of the interior angles of a pentagon is"
+            "question": "You have 10 users plugged into a hub running 10Mbps half-duplex. There is a server connected to the switch running 10Mbps half-duplex as well. How much bandwidth does each host have to the server? "
+          },
+          {
+            "id": 22,
+            "answer": 3,
+            "options": [
+              {
+                "id": 1,
+                "value": "192.168.168.129-190"
+              },
+              {
+                "id": 1,
+                "value": "192.168.168.129-191"
+              },
+              {
+                "id": 1,
+                "value": "192.168.168.128-190"
+              },
+              {
+                "id": 1,
+                "value": "192.168.168.128-192"
+              }
+            ],
+            "question": "Which of the following is the valid host range for the subnet on which the IP address 192.168.168.188 255.255.255.192 resides?"
+          },
+          {
+            "id": 22,
+            "answer": 4,
+            "options": [
+              {
+                "id": 1,
+                "value": "line telnet 0 4"
+              },
+              {
+                "id": 1,
+                "value": "line aux 0 4"
+              },
+              {
+                "id": 1,
+                "value": "line vty 0 4"
+              },
+              {
+                "id": 1,
+                "value": "line con 0"
+              }
+            ],
+            "question": "Which of the following commands will allow you to set your Telnet password on a Cisco router?"
+          },
+          {
+            "id": 22,
+            "answer": 4,
+            "options": [
+              {
+                "id": 1,
+                "value": "sh pvc"
+              },
+              {
+                "id": 1,
+                "value": "show interface"
+              },
+              {
+                "id": 1,
+                "value": "show frame-relay pvc"
+              },
+              {
+                "id": 1,
+                "value": "show run"
+              }
+            ],
+            "question": "What command will display the line, protocol, DLCI, and LMI information of an interface?"
+          },
+          {
+            "id": 21,
+            "answer": 2,
+            "options": [
+              {
+                "id": 1,
+                "value": "NAT"
+              },
+              {
+                "id": 1,
+                "value": "Static"
+              },
+              {
+                "id": 1,
+                "value": "Dynamic"
+              },
+              {
+                "id": 1,
+                "value": "PAT"
+              }
+            ],
+            "question": "What flavor of Network Address Translation can be used to have one IP address allow many users to connect to the global Internet?"
+          },
+          {
+            "id": 22,
+            "answer": 4,
+            "options": [
+              {
+                "id": 1,
+                "value": "100 kbps"
+              },
+              {
+                "id": 1,
+                "value": "1 Mbps"
+              },
+              {
+                "id": 1,
+                "value": "2 Mbps"
+              },
+              {
+                "id": 1,
+                "value": "10 Mbps"
+              }
+            ],
+            "question": "You have 10 users plugged into a hub running 10Mbps half-duplex. There is a server connected to the switch running 10Mbps half-duplex as well. How much bandwidth does each host have to the server? "
+          },
+          {
+            "id": 22,
+            "answer": 3,
+            "options": [
+              {
+                "id": 1,
+                "value": "192.168.168.129-190"
+              },
+              {
+                "id": 1,
+                "value": "192.168.168.129-191"
+              },
+              {
+                "id": 1,
+                "value": "192.168.168.128-190"
+              },
+              {
+                "id": 1,
+                "value": "192.168.168.128-192"
+              }
+            ],
+            "question": "Which of the following is the valid host range for the subnet on which the IP address 192.168.168.188 255.255.255.192 resides?"
+          },
+          {
+            "id": 22,
+            "answer": 4,
+            "options": [
+              {
+                "id": 1,
+                "value": "line telnet 0 4"
+              },
+              {
+                "id": 1,
+                "value": "line aux 0 4"
+              },
+              {
+                "id": 1,
+                "value": "line vty 0 4"
+              },
+              {
+                "id": 1,
+                "value": "line con 0"
+              }
+            ],
+            "question": "Which of the following commands will allow you to set your Telnet password on a Cisco router?"
+          },
+          {
+            "id": 22,
+            "answer": 4,
+            "options": [
+              {
+                "id": 1,
+                "value": "sh pvc"
+              },
+              {
+                "id": 1,
+                "value": "show interface"
+              },
+              {
+                "id": 1,
+                "value": "show frame-relay pvc"
+              },
+              {
+                "id": 1,
+                "value": "show run"
+              }
+            ],
+            "question": "What command will display the line, protocol, DLCI, and LMI information of an interface?"
           }
         ]
+      },
+      {
+        "id": 13,
+        "name": "Data Structure",
+        "image": "datastructure",
+        "quizzes": []
+      },
+      {
+        "id": 14,
+        "name": "Algorithms",
+        "image": "algorithm",
+        "quizzes": []
+      },
+      {
+        "id": 15,
+        "name": "Software Testing",
+        "image": "testing",
+        "quizzes": []
+      },
+      {
+        "id": 16,
+        "name": "Database",
+        "image": "database",
+        "quizzes": []
+      },
+      {
+        "id": 17,
+        "name": "Quality Analysis",
+        "image": "analysis",
+        "quizzes": []
+      },
+      {
+        "id": 18,
+        "name": "HTML",
+        "image": "html",
+        "quizzes": []
+      },
+      {
+        "id": 19,
+        "name": "CSS",
+        "image": "css",
+        "quizzes": []
+      },
+      {
+        "id": 20,
+        "name": "Javascript",
+        "image": "javascript",
+        "quizzes": []
       }
     ]
+  },
+  {
+    "id": 2,
+    "name": "Mathematics",
+    "image": "maths",
+    "subtopics": [
+      {
+        "id": 11,
+        "name": "Algebra",
+        "image": "algebra",
+        "quizzes": []
+      },
+      {
+        "id": 12,
+        "name": "Calculus and analysis",
+        "image": "algebra",
+        "quizzes": []
+      },
+      {
+        "id": 13,
+        "name": "Geometry and topology",
+        "image": "algebra",
+        "quizzes": []
+      },
+      {
+        "id": 14,
+        "name": "Combinatorics",
+        "image": "algebra",
+        "quizzes": []
+      },
+      {
+        "id": 15,
+        "name": "Logic",
+        "image": "algebra",
+        "quizzes": []
+      },
+      {
+        "id": 16,
+        "name": "Number theory",
+        "image": "algebra",
+        "quizzes": []
+      },
+      {
+        "id": 17,
+        "name": "Dynamical systems and differential equations",
+        "image": "algebra",
+        "quizzes": []
+      },
+      {
+        "id": 18,
+        "name": "Mathematical physics",
+        "image": "algebra",
+        "quizzes": []
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Science",
+    "image": "science",
+    "subtopics": []
+  },
+  {
+    "id": 4,
+    "name": "Engineering",
+    "image": "engineering",
+    "subtopics": []
+  },
+  {
+    "id": 5,
+    "name": "Aptitude",
+    "image": "aptitude",
+    "subtopics": []
+  },
+  {
+    "id": 6,
+    "name": "Electronics",
+    "image": "electronics",
+    "subtopics": []
+  },
+  {
+    "id": 7,
+    "name": "Geography",
+    "image": "geography",
+    "subtopics": []
   }
 ]

@@ -24,10 +24,11 @@ class NavigationUtil {
 //        appDelegate.window?.rootViewController = tabBarVC
 //    }
 
-    static func gotoSubTopicsScreen(vc: UIViewController, subtopics: [SubTopic]) {
+    static func gotoSubTopicsScreen(vc: UIViewController, subtopics: [SubTopic], viewTitle: String) {
         let storyboard: UIStoryboard = UIStoryboard(name: "SubTopics", bundle: nil)
         let destination = storyboard.instantiateViewController(withIdentifier: "SubTopicsVC") as! SubTopicsViewController
         destination.mockSubTopics = subtopics
+        destination.viewTitle = viewTitle
         vc.navigationController!.pushViewController(destination, animated: true)
     }
 
